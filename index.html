@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moez - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="img/logo.png" alt="Moez logo" class="brand-logo">
+        <span class="brand-name">Moez</span>
+      </div>
+
+      <!-- Mobile nav toggle -->
+      <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-box" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#site-cta">Contact me</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (fixed behind content) -->
+  <section class="hero" aria-hidden="false">
+    <div class="left-cluster">
+      <div class="thumb-card">
+        <img src="img/2.jpg" alt="Thumbnail">
+      </div>
+
+      <p class="lead">
+        Just a CS student who loves solving problems and building cool stuff with code.
+      </p>
+
+      <div class="cta-line">
+        <button class="circle-btn" aria-label="Get started">➜</button>
+        <span class="cta-label">GET STARTED</span>
+      </div>
+
+      <p class="tagline">Big ideas, late nights, and a passion for building things that matter.</p>
+    </div>
+
+    <div class="hero-img" aria-hidden="true">
+      <img src="img/1.png" alt="">
+    </div>
+    <h1 class="hero-title">
+
+      <span class="name-cycle">
+        <span class="name name-a">MOEZ</span>
+        <span class="name name-b">BEN JEMIAA</span>
+      </span>
+    </h1>
+  </section>
+
+  <!-- Space driving hero intro animation -->
+  <div class="progress-space" id="progressSpace" aria-hidden="true"></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section" data-reveal>
+    <div class="about-container">
+      <div class="about-head">
+        <span class="about-dot">•</span>
+        <span>About</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text" data-reveal>
+          <h2>
+            I’m a curious soul who loves exploring new ideas, learning on my own, and turning challenges into creative solutions
+            <span class="about-x">✕</span>
+            I believe in teamwork, growth, and keeping things calm — even when they get complicated.
+          </h2>
+          <p class="about-sub">
+            helping brands grow, connect, and stand out in a digital world.
+          </p>
+        </div>
+
+        <figure class="about-image" data-reveal>
+          <img src="img/3.png" alt="Curiosity and calm">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITE TRANSITION (contains full viewport mask + elevated dot) -->
+  <section id="projects-transition" class="projects-transition" aria-hidden="true">
+    <div class="transition-mask" aria-hidden="true"></div>
+    <div class="transition-gap" aria-hidden="true"></div>
+    <div class="grow-dot" id="growDot" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects-section" data-projects>
+    <div class="projects-container">
+      <div class="projects-head">
+        <span class="projects-label">Projects</span>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/Covoitun"><img src="img/covoitun.png" alt="Project 1"></a>
+            
+          </div>
+          <h3 class="project-title">Covoitun</h3>
+          <p class="project-desc">A full-stack web application for a carpooling system developed for the FIS Project. It helps users to publish trips, reserve seats, and manage carpooling reservations in a convenient and organized way.</p>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/FunGames"><img src="img/FunGames.png" alt="Project 2"></a>
+            
+          </div>
+          <h3 class="project-title">FunGames</h3>
+          <p class="project-desc">A full-stack web application for a collection of fun and interactive games, built to entertain and challenge users of all ages.</p>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/FaceMesh"><img src="img/faceMesh.png" alt="Project 3"></a>
+            
+          </div>
+          <h3 class="project-title">FaceMesh</h3>
+          <p class="project-desc">FaceMesh is a lightweight project for detecting and working with facial landmarks (face mesh) in images and video.</p>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/Yeti"><img src="img/YETI.png" alt="Project 4"></a>
+            
+          </div>
+          <h3 class="project-title">Yeti </h3>
+          <p class="project-desc">A React-based single-page application (SPA) landing page template — ready to preview and deploy with GitHub Pages.</p>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/sudoku_using_ai"><img src="img/sudo.png" alt="Project 5"></a>
+            
+          </div>
+          <h3 class="project-title">Sudoku </h3>
+          <p class="project-desc">An interactive Sudoku solver and game built with Python and Tkinter, featuring multiple AI algorithms to automatically solve Sudoku puzzles. The project visualizes solving statistics and supports various difficulty levels.</p>
+        </article>
+
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/chess"><img src="img/chess.png" alt="Project 6"></a>
+            
+          </div>
+          <h3 class="project-title">Chess </h3>
+          <p class="project-desc">a simple browser-based chess game built with HTML, CSS and JavaScript.</p>
+        </article>
+        <article class="project-card" data-reveal>
+          <div class="project-media">
+            <a href="https://github.com/MoezBenJemiaa/Gestion_d_une_Plateforme_de_formation"><img src="img/java.png" alt="Project 7"></a>
+            
+          </div>
+          <h3 class="project-title">Gestion d une Plateforme de formation</h3>
+          <p class="project-desc">Gestion d'une Plateforme de formation is a Java application designed to manage an educational/training platform, supporting both trainers ("Formateur") and students ("Etudiant"). </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + Footer (inserted at bottom) -->
+  <section class="site-cta" id="site-cta" data-reveal>
+    <div class="cta-inner">
+      <div class="cta-left">
+        <div class="cta-meta">Start Journey</div>
+      </div>
+
+      <div class="cta-center">
+        <h2 class="cta-title">GOT PROJECT IN MIND?</h2>
+        <hr class="cta-rule" />
+        <div class="cta-subrow">
+          <span class="cta-copyright">©2025</span>
+          <div class="cta-action">
+            <button class="cta-circle" id="bookMeeting" aria-label="Book a meeting">➜</button>
+            <span class="cta-action-label">BOOK A MEETING</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-right">
+        <div class="cta-meta right">Based in Tunis, Tunisia</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <strong class="brand-box-footer">MOEZ BEN JEMIAA</strong>
+        </div>
+
+        <div class="footer-contact">
+          <div class="footer-block" data-reveal>
+            <div class="footer-block-title">EMAIL</div>
+            <div class="footer-block-body">MoezBj27@gmail.com</div>
+          </div>
+
+          <div class="footer-block" data-reveal>
+            <div class="footer-block-title">LOCATION</div>
+            <div class="footer-block-body">Tunis, Tunisia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="links-col" data-reveal>
+          <h4>Main Page</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project</a></li>
+          </ul>
+        </div>
+
+        <div class="links-col" data-reveal>
+          <h4>Follow Me</h4>
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/moez-ben-jemiaa-261780387/" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://github.com/MoezBenJemiaa" aria-label="github">Github</a></li>
+            <li><a href="https://www.instagram.com/moez_bj96" aria-label="Instagram">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="watermark" id="watermark">MOEZ BEN JEMIAA</div>
+        <div class="small-print">© Made By Moez Ben Jemiaa</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Book meeting - example behavior
+    document.getElementById('bookMeeting')?.addEventListener('click', function(){
+      window.location.href = 'mailto:MoezBj27@gmail.com?subject=Book%20a%20meeting';
+    });
+  </script>
+
+</body>
+</html>
